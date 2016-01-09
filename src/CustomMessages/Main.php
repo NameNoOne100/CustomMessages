@@ -40,3 +40,10 @@
       $player_name = $player->getName();
       $quit = "quit-message: ";
       $quit_message = substr(strstr(file_get_contents("CustomMessages/messages.txt"), $quit), strlen($quit));
+      $event->setQuitMessage($quit_message);
+
+    }
+
+  }
+
+?>
