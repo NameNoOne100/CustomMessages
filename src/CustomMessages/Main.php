@@ -17,7 +17,7 @@
 
         @mkdir("CustomMessages/", 0777, true);
         touch("CustomMessages/messages.txt");
-        file_put_contents("CustomMessages/messages.txt", "join-message: ");
+        file_put_contents("CustomMessages/messages.txt", "join-message: \n");
         file_put_contents("CustomMessages/messages.txt", "quit-message: ", FILE_APPEND);
 
       }
