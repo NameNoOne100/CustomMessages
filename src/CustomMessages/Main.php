@@ -30,3 +30,13 @@
       $player_name = $player->getName();
       $join = "join-message: ";
       $join_message = substr(strstr(file_get_contents("CustomMessages/messages.txt"), $join), strlen($join));
+      $event->setJoinMessage($join_message);
+
+    }
+
+    public function onQuit(PlayerQuitEvent $event) {
+
+      $player = $event->getPlayer();
+      $player_name = $player->getName();
+      $quit = "quit-message: ";
+      $quit_message = substr(strstr(file_get_contents("CustomMessages/messages.txt"), $quit), strlen($quit));
